@@ -91,11 +91,9 @@ public class TestExchangeAdapter implements HttpExchangeAdapter {
 		saveInput("exchangeForEntity", requestValues, bodyType);
 		return (ResponseEntity<T>) ResponseEntity.ok(getInvokedMethodName());
 	}
-
-	@Override
-	public boolean supportsRequestAttributes() {
-		return true;
-	}
+    @Override
+	public boolean supportsRequestAttributes() { return true; }
+        
 
 	protected <T> void saveInput(
 			String methodName, HttpRequestValues values, @Nullable ParameterizedTypeReference<T> bodyType) {
