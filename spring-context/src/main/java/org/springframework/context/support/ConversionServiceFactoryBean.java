@@ -96,10 +96,8 @@ public class ConversionServiceFactoryBean implements FactoryBean<ConversionServi
 	public Class<? extends ConversionService> getObjectType() {
 		return GenericConversionService.class;
 	}
-
-	@Override
-	public boolean isSingleton() {
-		return true;
-	}
+    @Override
+	public boolean isSingleton() { return true; }
+        
 
 }
