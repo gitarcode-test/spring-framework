@@ -27,11 +27,9 @@ import org.springframework.aop.MethodMatcher;
  * @author Rod Johnson
  */
 public abstract class DynamicMethodMatcher implements MethodMatcher {
-
-	@Override
-	public final boolean isRuntime() {
-		return true;
-	}
+    @Override
+	public final boolean isRuntime() { return true; }
+        
 
 	/**
 	 * Can override to add preconditions for dynamic matching. This implementation
