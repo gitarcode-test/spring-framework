@@ -717,11 +717,9 @@ class MessageBrokerBeanDefinitionParser implements BeanDefinitionParser {
 		public Class<?> getObjectType() {
 			return WebSocketHandler.class;
 		}
-
-		@Override
-		public boolean isSingleton() {
-			return true;
-		}
+    @Override
+		public boolean isSingleton() { return true; }
+        
 	}
 
 }
