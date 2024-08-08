@@ -75,10 +75,8 @@ public class WebSocketContainerFactoryBean implements FactoryBean<WebSocketConta
 	public Class<?> getObjectType() {
 		return WebSocketContainer.class;
 	}
-
-	@Override
-	public boolean isSingleton() {
-		return true;
-	}
+    @Override
+	public boolean isSingleton() { return true; }
+        
 
 }
