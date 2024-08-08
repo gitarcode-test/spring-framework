@@ -48,10 +48,8 @@ class JmsTemplateTransactedTests extends JmsTemplateTests {
 	protected boolean useTransactedSession() {
 		return true;
 	}
-
-	@Override
-	protected boolean useTransactedTemplate() {
-		return true;
-	}
+    @Override
+	protected boolean useTransactedTemplate() { return true; }
+        
 
 }
