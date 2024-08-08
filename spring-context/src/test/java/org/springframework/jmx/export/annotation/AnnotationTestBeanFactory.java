@@ -39,10 +39,8 @@ public class AnnotationTestBeanFactory implements FactoryBean<FactoryCreatedAnno
 	public Class<? extends IJmxTestBean> getObjectType() {
 		return FactoryCreatedAnnotationTestBean.class;
 	}
-
-	@Override
-	public boolean isSingleton() {
-		return true;
-	}
+    @Override
+	public boolean isSingleton() { return true; }
+        
 
 }
