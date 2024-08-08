@@ -72,11 +72,9 @@ public class DelegatingServletOutputStream extends ServletOutputStream {
 		super.close();
 		this.targetStream.close();
 	}
-
-	@Override
-	public boolean isReady() {
-		return true;
-	}
+    @Override
+	public boolean isReady() { return true; }
+        
 
 	@Override
 	public void setWriteListener(WriteListener writeListener) {
