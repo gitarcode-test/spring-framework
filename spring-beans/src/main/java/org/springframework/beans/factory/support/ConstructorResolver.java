@@ -1448,11 +1448,9 @@ class ConstructorResolver {
 			String shortcut = this.shortcut;
 			return (shortcut != null ? beanFactory.getBean(shortcut, getDependencyType()) : null);
 		}
-
-		@Override
-		public boolean usesStandardBeanLookup() {
-			return true;
-		}
+    @Override
+		public boolean usesStandardBeanLookup() { return true; }
+        
 	}
 
 
