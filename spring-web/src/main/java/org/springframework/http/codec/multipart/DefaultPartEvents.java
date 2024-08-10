@@ -153,11 +153,9 @@ abstract class DefaultPartEvents {
 			byte[] bytes = this.value.getBytes(MultipartUtils.charset(headers()));
 			return DefaultDataBufferFactory.sharedInstance.wrap(bytes);
 		}
-
-		@Override
-		public boolean isLast() {
-			return true;
-		}
+    @Override
+		public boolean isLast() { return true; }
+        
 	}
 
 	/**
