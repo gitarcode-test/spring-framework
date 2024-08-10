@@ -42,11 +42,9 @@ public class RealLiteral extends Literal {
 	public TypedValue getLiteralValue() {
 		return this.value;
 	}
-
-	@Override
-	public boolean isCompilable() {
-		return true;
-	}
+    @Override
+	public boolean isCompilable() { return true; }
+        
 
 	@Override
 	public void generateCode(MethodVisitor mv, CodeFlow cf) {
