@@ -29,11 +29,9 @@ public class StringFactoryBean implements FactoryBean<String> {
 	public Class<String> getObjectType() {
 		return String.class;
 	}
-
-	@Override
-	public boolean isSingleton() {
-		return true;
-	}
+    @Override
+	public boolean isSingleton() { return true; }
+        
 
 }
 
