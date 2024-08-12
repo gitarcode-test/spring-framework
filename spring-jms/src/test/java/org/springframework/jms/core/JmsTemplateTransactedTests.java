@@ -43,11 +43,9 @@ class JmsTemplateTransactedTests extends JmsTemplateTests {
 	protected Session getLocalSession() {
 		return this.localSession;
 	}
-
-	@Override
-	protected boolean useTransactedSession() {
-		return true;
-	}
+    @Override
+	protected boolean useTransactedSession() { return true; }
+        
 
 	@Override
 	protected boolean useTransactedTemplate() {
