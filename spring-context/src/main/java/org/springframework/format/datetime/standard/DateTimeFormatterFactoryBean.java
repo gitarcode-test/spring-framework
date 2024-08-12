@@ -56,10 +56,8 @@ public class DateTimeFormatterFactoryBean extends DateTimeFormatterFactory
 	public Class<?> getObjectType() {
 		return DateTimeFormatter.class;
 	}
-
-	@Override
-	public boolean isSingleton() {
-		return true;
-	}
+    @Override
+	public boolean isSingleton() { return true; }
+        
 
 }
