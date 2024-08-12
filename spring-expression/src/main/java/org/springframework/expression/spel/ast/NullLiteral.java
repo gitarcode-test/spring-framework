@@ -43,11 +43,9 @@ public class NullLiteral extends Literal {
 	public String toString() {
 		return "null";
 	}
-
-	@Override
-	public boolean isCompilable() {
-		return true;
-	}
+    @Override
+	public boolean isCompilable() { return true; }
+        
 
 	@Override
 	public void generateCode(MethodVisitor mv, CodeFlow cf) {
