@@ -430,11 +430,9 @@ class DefaultServerRequestBuilder implements ServerRequest.Builder {
 		public boolean isFinished() {
 			return false;
 		}
-
-		@Override
-		public boolean isReady() {
-			return true;
-		}
+    @Override
+		public boolean isReady() { return true; }
+        
 
 		@Override
 		public void setReadListener(ReadListener readListener) {
