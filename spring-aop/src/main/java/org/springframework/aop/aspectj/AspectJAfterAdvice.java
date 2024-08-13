@@ -57,10 +57,8 @@ public class AspectJAfterAdvice extends AbstractAspectJAdvice
 	public boolean isBeforeAdvice() {
 		return false;
 	}
-
-	@Override
-	public boolean isAfterAdvice() {
-		return true;
-	}
+    @Override
+	public boolean isAfterAdvice() { return true; }
+        
 
 }
