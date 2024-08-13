@@ -176,11 +176,9 @@ public class VariableReference extends SpelNodeImpl {
 		public void setValue(@Nullable Object newValue) {
 			this.evaluationContext.setVariable(this.name, newValue);
 		}
-
-		@Override
-		public boolean isWritable() {
-			return true;
-		}
+    @Override
+		public boolean isWritable() { return true; }
+        
 	}
 
 }
