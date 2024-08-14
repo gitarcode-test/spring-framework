@@ -50,10 +50,8 @@ public class JtaTransactionManagerFactoryBean implements FactoryBean<JtaTransact
 	public Class<?> getObjectType() {
 		return this.transactionManager.getClass();
 	}
-
-	@Override
-	public boolean isSingleton() {
-		return true;
-	}
+    @Override
+	public boolean isSingleton() { return true; }
+        
 
 }
