@@ -77,11 +77,9 @@ public class NoOpTaskScheduler implements TaskScheduler {
 		public boolean cancel(boolean mayInterruptIfRunning) {
 			return true;
 		}
-
-		@Override
-		public boolean isCancelled() {
-			return true;
-		}
+    @Override
+		public boolean isCancelled() { return true; }
+        
 
 		@Override
 		public boolean isDone() {
