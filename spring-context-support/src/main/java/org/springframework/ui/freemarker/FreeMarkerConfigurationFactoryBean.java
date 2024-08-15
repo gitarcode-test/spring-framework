@@ -77,10 +77,8 @@ public class FreeMarkerConfigurationFactoryBean extends FreeMarkerConfigurationF
 	public Class<? extends Configuration> getObjectType() {
 		return Configuration.class;
 	}
-
-	@Override
-	public boolean isSingleton() {
-		return true;
-	}
+    @Override
+	public boolean isSingleton() { return true; }
+        
 
 }
